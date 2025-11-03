@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stock Profit Streak Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div>
+        <h1>Stock Profit Streak Finder</h1>
+        <p class="muted">To find the most profitable stock range using Maximun sum Sub-Array</p>
+      </div>
+      <div class="controls">
+        <label for="stockName">Stock</label>
+        <input id="stockName" type="text" placeholder="e.g. Reliance" />
+        <label for="daysRange">Days</label>
+        <input id="daysRange" type="range" min="5" max="30" value="14" />
+        <span id="daysLabel">14</span>
+        <button id="generateBtn" class="btn">Generate Random</button>
+        <button id="analyzeBtn" class="btn primary">Analyze</button>
+      </div>
+    </header>
+
+    <section class="chart-card">
+      <div class="meta">
+        <div><strong id="companyLabel">—</strong></div>
+        <div id="summary" class="muted">No data yet — Generate random data or enter a stock name and click Generate.</div>
+      </div>
+      <canvas id="priceChart" height="160"></canvas>
+    </section>
+
+    <section class="info">
+      <div class="panel">
+        <h3>Result</h3>
+        <p id="resultText">—</p>
+      </div>
+      <div class="panel">
+        <h3>Details</h3>
+        <ul id="detailsList" class="muted">
+          <li>Buy day: —</li>
+          <li>Sell day: —</li>
+          <li>Total profit: —</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="foot muted">This was build by my team and use of AI</footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

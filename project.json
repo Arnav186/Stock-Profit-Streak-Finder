@@ -1,0 +1,60 @@
+{
+  "projectName": "Stock Profit Streak Finder",
+  "description": "A web-based visualization tool that simulates stock price data and uses Kadane’s Algorithm to find and highlight the most profitable streak. The project demonstrates an integration of dynamic programming with modern data visualization using Chart.js.",
+  "theme": "Dark Theme with Animated Shaded Highlight",
+  "technologies": {
+    "frontend": ["HTML5", "CSS3", "JavaScript (ES6)"],
+    "libraries": ["Chart.js"],
+    "algorithm": "Kadane's Algorithm (Maximum Subarray Sum)"
+  },
+  "features": [
+    "Random stock price generation for adjustable number of days",
+    "Interactive UI with slider and input controls",
+    "Dynamic chart rendering using Chart.js",
+    "Animated shaded highlight to visualize best profit streak",
+    "Custom plugin for gradient and glow effects",
+    "Real-time UI updates for analysis results"
+  ],
+  "files": {
+    "index.html": {
+      "purpose": "Defines the structure of the app with input controls, chart canvas, and result panels.",
+      "mainElements": ["Header controls", "Canvas for chart", "Result and details panels", "Footer note"]
+    },
+    "style.css": {
+      "purpose": "Implements a dark gradient theme with glass-like panels, rounded buttons, and responsive design.",
+      "mainFeatures": [
+        "Custom CSS variables for theme colors",
+        "Dark background gradient",
+        "Button and panel styling",
+        "Responsive layout for small screens"
+      ]
+    },
+    "script.js": {
+      "purpose": "Implements the logic, chart rendering, and animations.",
+      "mainFunctions": [
+        "generatePrices() - creates random realistic stock prices",
+        "computeChanges() - calculates daily price differences",
+        "kadane() - finds maximum profit subarray (best streak)",
+        "drawChart() - visualizes data using Chart.js",
+        "ShadePlugin - custom plugin to draw animated highlight",
+        "animateShade() - animates shaded glow effect",
+        "updateUI(), generateAndShow(), analyzeCurrent() - handle user interaction and display"
+      ]
+    }
+  },
+  "usage": {
+    "steps": [
+      "1. Open index.html in a web browser.",
+      "2. Enter a stock name or leave it blank for random selection.",
+      "3. Adjust the number of days with the slider.",
+      "4. Click 'Generate Random' to create price data.",
+      "5. Click 'Analyze' to find and highlight the best profit streak."
+    ]
+  },
+  "output": {
+    "chart": "Line chart showing daily prices with glowing shaded area over the most profitable range.",
+    "summary": "Displays buy/sell days, profit amount, and streak duration."
+  },
+  "authors": ["Arnav and Team (with AI assistance)"],
+  "license": "Free for educational and academic use"
+}
