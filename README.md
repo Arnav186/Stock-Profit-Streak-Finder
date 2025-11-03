@@ -22,7 +22,7 @@ A dark-themed web visualization tool that simulates stock data and highlights th
 2. Open `index.html` in a web browser.
 3. Click **Generate Random** then **Analyze**.
 
-## 📊 Algorithm
+## Algorithm
 Implements **Kadane’s Algorithm** to find the maximum profit streak from simulated stock data.
 
 ## Contributors
