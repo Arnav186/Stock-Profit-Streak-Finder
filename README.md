@@ -1,6 +1,6 @@
 # Stock Profit Streak Finder
 
-A dark-themed web visualization tool that simulates stock data and highlights the most profitable streak using **Kadane’s Algorithm**.
+The Stock Profit Streak Finder is a dynamic web-based visualization tool that simulates stock market data and identifies the most profitable continuous streak of price increases using Kadane’s Algorithm. The project showcases both algorithmic logic and creative UI design.
 
 ## Features
 - Random stock price generator
